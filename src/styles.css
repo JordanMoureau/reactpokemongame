@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
+
+* {
+  font-family: "Silkscreen", sans-serif;
+}
+
+.container {
+  margin: 2vh 2vw;
+  width: 96vw;
+  height: 96vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.level {
+  font-size: 0.9em;
+  padding: 12px 20px;
+  font-weight: 800;
+  position: absolute;
+  background-color: #ffcb05;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  text-align: right;
+  margin: 3.5vh 2.3vw;
+  top: 0;
+  right: 0;
+}
+
+.pop-up {
+  width: 95%;
+  height: 93%;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.pop-up-window {
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+  height: 180px;
+  width: 200px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.pop-up-window button {
+  width: 120px;
+  border: none;
+  padding: 8px;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.pop-up-window input {
+  padding: 10px;
+  width: 180px;
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  text-align: center;
+}
+.pop-up-window input:focus {
+  outline: 2px solid black !important;
+}
+
+.pop-up-window input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+.pop-up-window button:hover {
+  background-color: #cc0000;
+  color: white;
+  cursor: pointer;
+}
+
+.pop-up-window label {
+  font-weight: 800;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+.difficulty {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 0.9em;
+  padding: 5px 0px;
+}
+
+.difficulty div {
+  cursor: pointer;
+  width: fit-content;
+  padding: 3px 5px;
+  background-color: inherit;
+}
+
+.difficulty div:hover {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+.selected {
+  background-color: #ffcb05 !important;
+}
+
+.selected:hover {
+  background-color: #ffcb05 !important;
+  cursor: default;
+  color: black !important;
+}
+
+.side-bar {
+  background: #cc0000;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 4vh 4vw;
+  width: 350px;
+  height: 85vh;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.side-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.arrow {
+  margin: 3.5vh 3.6vw;
+  padding: 0px 10%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  color: white;
+  font-size: 4.5em;
+  cursor: pointer;
+  background-color: #cc0000;
+  border-bottom-left-radius: 20px;
+}
+
+.arrow-turned {
+  transform: rotate(90deg);
+}
+
+.user {
+  display: flex;
+  flex-wrap: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0 5px 35px 5px;
+}
+
+.user div {
+  color: white;
+  font-size: 2em;
+  text-align: right;
+  padding-left: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 830px;
+}
+
+input .wrong {
+  border: 2px solid #cc0000;
+}
+
+.tabs button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+img {
+  height: inherit;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 94%;
+  padding: 3% 10%;
+}
+
+.solve {
+  padding: 20px 0px;
+  font-size: 1.5em;
+}
+
+.math {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.main input {
+  width: 50px;
+  border: none;
+  font-size: 1em;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.main input:focus {
+  outline: 2px solid black !important;
+}
+
+.main button {
+  width: 120px;
+  border: none;
+  padding: 8px;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+.main button:hover {
+  background-color: #cc0000;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .level {
+    margin: 3.5vh 2vw;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .arrow {
+    padding: 0px 8%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .arrow {
+    display: none;
+  }
+  .level {
+    margin: 3.5vh 1.8vw;
+  }
+}
+
+@media screen and (min-width: 1217px) {
+  .arrow {
+    padding: 0px 8%;
+  }
+  .level {
+    margin: 3.5vh 2.5vw;
+  }
+}
