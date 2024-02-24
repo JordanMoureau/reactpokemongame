@@ -330,7 +330,7 @@ function MathProblem({
         <button
           type="submit"
           value="Send"
-          {...(!answer ? { disabled: true } : {})}
+          {...(answer === "" ? { disabled: true } : {})}
         >
           {answered}
         </button>
