@@ -1,16 +1,16 @@
-#Pokemon Math Game | PokeMath
+# Pokemon Math Game | PokeMath
 
 PokeMath is a game built for my kids to learn math. My son asked me to build him a game where he could evolve his pokemons. He's been struggling with math a bit in school so I decided to make him a math game. The web app helps kids learn addition, subtraction and multiplication. 
 
-##Project Description
+## Project Description
 
 The game level can be set to easy, medium or hard which defines which operator is placed between the two randomly generated numbers between 1 and 12. If the answer logged in the input field is correct then the 8bit pokemon gif changes to the next evolution of the pokemon selected. When you reach the end of the pokemon's evolution a congrats message appears along with a reset button. You can change the level of the game at any point to switch out the math problem.
 
-##Technologies Used
+## Technologies Used
 
 It was built with React, HTML and CSS.
 
-##Challenges
+## Challenges
 
 There were three big road blocks for me when building this project:
 
