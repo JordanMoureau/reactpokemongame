@@ -17,6 +17,7 @@ There were three big road blocks for me when building this project:
 1. Selecting the pokemon from the side bar
 2. Going from data based to randomly generated numbers
 3. Accessing current render of random intergers to calcuate the correct answer
+4. Refactoring with UseReducer
 
 
 ## Using the Project
