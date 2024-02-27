@@ -8,7 +8,7 @@ The game level can be set to easy, medium or hard which defines which operator i
 
 ## Technologies Used
 
-It was built with React, HTML and CSS.
+It was built with React, HTML and CSS. No dependencies.
 
 ## Challenges
 
